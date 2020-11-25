@@ -1,0 +1,407 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pageBackground.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*FONTS*/
+
+@font-face {
+  font-family: Staatliches;
+  src: url(/fonts/Staatliches-Regular.ttf);
+}
+@font-face {
+  font-family: Kosmik;
+  src: url(/fonts/KOSMIK\ FREE.ttf);
+}
+@font-face {
+  font-family: Italian Horskey;
+  src: url(/fonts/Italian\ Horskey\ Script\ Demo.otf);
+}
+@font-face {
+  font-family: Epilogue;
+  src: url(/fonts/Epilogue-Regular.ttf);
+}
+
+/* NAVIGATION*/
+
+li,
+a,
+button {
+  text-decoration: none;
+  font-family: Staatliches;
+  font-size: 22px;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logoImg {
+  width: 150px;
+  height: 150px;
+}
+.logoText {
+  margin-right: auto;
+  font-family: Italian Horskey;
+  text-shadow: black 2px 3px 5px;
+  color: #ef3e36;
+  font-size: 50px;
+}
+nav {
+  background-color: #2e282ae1;
+  padding: 18px 15px;
+  border-radius: 35px;
+}
+.nav-links {
+  list-style-type: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.nav-links li,
+a {
+  transition: all 0.3s ease-in-out;
+}
+.nav-links li,
+a:hover {
+  color: #f0827c;
+}
+
+.currentPage {
+  color: #ef3e36;
+}
+.button {
+  border-radius: 30px;
+  padding: 8px 15px;
+  border: 2px solid black;
+  transition: ease-in 0.3s all;
+  background-color: #ef3e36;
+}
+.button:hover {
+  background-color: #e9fff9;
+}
+
+.page {
+  margin: 0 8%;
+}
+/* Home */
+
+.home-indication {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  color: white;
+  text-align: center;
+  font-family: Epilogue;
+  text-decoration: underline;
+  text-shadow: black 3px 2px 4px;
+}
+.banner {
+  margin-top: 20px;
+  background-image: url(/images/homeBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h2 {
+  color: white;
+  font-family: Italian Horskey;
+  font-size: 70px;
+  text-shadow: black 3px 2px 4px;
+}
+.deal-heading {
+  font-family: Staatliches;
+  font-size: 80px;
+  text-shadow: black 3px 2px 4px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  padding: 10px;
+  border: black double 10px;
+  background-color: #ef3f36ef;
+  border-radius: 35px;
+}
+.row {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  font-family: Staatliches;
+  width: 25%;
+  border: 1px solid black;
+  transition: 0.3s;
+  margin: 0 50px;
+}
+.card-header {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 10px;
+  background-color: #ef3e36;
+}
+.card-body1 {
+  font-size: 18px;
+  background-image: url(/images/pizzaMargheritaDeal.jpg);
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+}
+.card-body1 h2 {
+  padding: 100px 0;
+  color: white;
+  text-shadow: black 3px 2px 4px;
+  font-family: Staatliches;
+  font-size: 40px;
+}
+.card-body2 {
+  font-size: 18px;
+  background-image: url(/images/calzoneDeal.jpg);
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+}
+.card-body2 h2 {
+  padding: 100px 0;
+  color: white;
+  text-shadow: black 3px 2px 4px;
+  font-family: Staatliches;
+  font-size: 40px;
+}
+.card-body3 {
+  font-size: 18px;
+  background-image: url(/images/cokeDeal.jpg);
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+}
+.card-body3 h2 {
+  padding: 80px 0;
+  color: white;
+  text-shadow: black 3px 2px 4px;
+  font-family: Staatliches;
+  font-size: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* Menu */
+
+.menu {
+  background-image: url("/images/slateBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  border: #ef3e36 solid 3px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+}
+.menu-title {
+  font-family: Italian Horskey;
+  font-size: 39px;
+  text-align: center;
+  padding: 50px 0px;
+  text-shadow: black 3px 2px 4px;
+}
+.item-row {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  text-align: center;
+  width: 30%;
+  align-items: center;
+}
+.item img {
+  width: 200px;
+  border-radius: 360px;
+}
+.item-name {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ef3e36;
+  font-family: Staatliches;
+}
+.item-desc {
+  padding: 10px 0;
+  margin-bottom: 80px;
+  font-size: 16px;
+  font-family: Epilogue;
+}
+
+/* Contact */
+
+.contact-title {
+  font-family: Staatliches;
+  font-size: 50px;
+  text-shadow: black 3px 2px 4px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: black double 10px;
+  background-color: #ef3f36ef;
+  border-radius: 35px;
+}
+.submission-form {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 39px;
+  border: #ef3e36 solid 3px;
+  border-radius: 5px;
+  background-image: url(/images/slateBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact-subtitle {
+  color: white;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: Epilogue;
+  text-decoration: underline;
+}
+.submission-form label {
+  font-size: 30px;
+  color: white;
+  font-family: Kosmik;
+  padding: 10px 0;
+}
+.submission-form input {
+  height: 30px;
+  font-size: 15px;
+}
+.submission-form textarea {
+  font-size: 15px;
+}
+.submission-form button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: ease-in 0.3s all;
+  background-color: #ef3e36;
+  cursor: pointer;
+  font-size: 30px;
+}
+.submission-form button:hover {
+  background-color: #f0827c;
+}
+
+/* About Us */
+
+.aboutUs-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 20px;
+  background-image: url(/images/brickOven.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.aboutUs-header h1 {
+  font-size: 80px;
+  font-family: Italian Horskey;
+  text-shadow: black 3px 2px 4px;
+  color: white;
+}
+.aboutUs-body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/slateBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 100px 0;
+  border: #ef3e36 solid 3px;
+  border-radius: 5px;
+}
+.aboutUs-title {
+  color: white;
+  font-size: 28px;
+  font-family: Epilogue;
+  padding: 20px 0;
+  align-self: center;
+}
+.aboutUs-body p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: Epilogue;
+  padding: 0 30px;
+  padding-bottom: 20px;
+}
+
+/* Order */
+
+.order-title {
+  font-family: Staatliches;
+  font-size: 50px;
+  text-shadow: black 3px 2px 4px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: black double 10px;
+  background-color: #ef3f36ef;
+  border-radius: 35px;
+}
+.order-form {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 39px;
+  border: #ef3e36 solid 3px;
+  border-radius: 5px;
+  background-image: url(/images/slateBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.order-form h2 {
+  font-family: Staatliches;
+  font-size: 42px;
+  color: #ef3e36;
+  padding-top: 50px;
+}
+.order-form label {
+  color: white;
+  font-family: Epilogue;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.order-form input {
+  margin-top: 18px;
+}
+.order-form button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  transition: ease-in 0.3s all;
+  background-color: #ef3e36;
+  cursor: pointer;
+  font-size: 30px;
+}
+.order-form button:hover {
+  background-color: #f0827c;
+}

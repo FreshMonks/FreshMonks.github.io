@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Local Dish Order</title>
+  </head>
+  <body>
+    <header>
+      <img class="logoImg" src="/images/logo.png" alt="nav logo" />
+      <h2 class="logoText">Local Dish</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Menu/menu.html">Menu</a></li>
+          <li>
+            <a href="/Contact/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/AboutUs/aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a class="button" href="/Order/order.html">Order Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page order-title">
+      <h2>Select Checkout Options</h2>
+    </section>
+    <section class="page">
+      <form class="order-form">
+        <div class="option1">
+          <h2>1. Pizza Variants</h2>
+          <div>
+            <label for="calzone-option">Calzone</label>
+            <input type="checkbox" id="calzone-option" />
+          </div>
+          <div>
+            <label for="margherita-option">Pizza Margherita</label>
+            <input type="checkbox" id="margherita-option" />
+          </div>
+          <div>
+            <label for="siciliana-option">Pizza Siciliana</label>
+            <input type="checkbox" id="siciliana-option" />
+          </div>
+          <div>
+            <label for="supreme-option">Pizza Supreme</label>
+            <input type="checkbox" id="supreme-option" />
+          </div>
+          <div>
+            <label for="hawaiian-option">Pizza Hawaiian</label>
+            <input type="checkbox" id="hawaiian-option" />
+          </div>
+        </div>
+        <div class="option2">
+          <h2>2. Size (Calzone does not apply)</h2>
+          <div>
+            <label for="10-inch">10"</label>
+            <input type="checkbox" id="10-inch" />
+          </div>
+          <div>
+            <label for="14-inch">14"</label>
+            <input type="checkbox" id="14-inch" />
+          </div>
+          <div>
+            <label for="20-inch">20"</label>
+            <input type="checkbox" id="20-inch" />
+          </div>
+        </div>
+        <div class="option3">
+          <h2>3. Beverages</h2>
+          <div>
+            <label for="cola-option">Cola</label>
+            <input type="checkbox" id="cola-option" />
+          </div>
+          <div>
+            <label for="pepsi-option">Pepsi</label>
+            <input type="checkbox" id="pepsi-option" />
+          </div>
+          <div>
+            <label for="sprite-option">Sprite</label>
+            <input type="checkbox" id="sprite-option" />
+          </div>
+          <div>
+            <label for="water-option">Water</label>
+            <input type="checkbox" id="water-option" />
+          </div>
+          <div>
+            <label for="none-option">None</label>
+            <input type="checkbox" id="none-option" />
+          </div>
+        </div>
+        <button type="submit">Checkout</button>
+      </form>
+    </section>
+  </body>
+</html>

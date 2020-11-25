@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Local Dish Contact</title>
+  </head>
+  <body>
+    <header>
+      <img class="logoImg" src="/images/logo.png" alt="nav logo" />
+      <h2 class="logoText">Local Dish</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Menu/menu.html">Menu</a></li>
+          <li>
+            <a class="currentPage" href="/Contact/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/AboutUs/aboutUs.html">About Us</a>
+          </li>
+          <li>
+            <a class="button" href="/Order/order.html">Order Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page contact-title">
+      <h2>Need To Get In Touch?</h2>
+    </section>
+    <section class="page">
+      <form class="submission-form">
+        <h2 class="contact-subtitle">
+          Enter your information below and we'll get back to you as soon as
+          possible.
+        </h2>
+        <label for="full-name">Your Name:</label>
+        <input type="text" id="full-name" required />
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" cols="30" rows="10" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
